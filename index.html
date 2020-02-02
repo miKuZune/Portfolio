@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> Max "miKuZune" Farley </title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel='stylesheet' type='text/css' href='main.css'>
+
+		<!-- Include fullPage -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+
+		<!-- Get font from google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<!-- Include FontAwsome -->
+		<link href="fontAwsome/css/all.css" rel="stylesheet"> 
+
+	</head>
+
+	<body>
+		
+		<header>
+			<div class='topNav'>
+				<a href='#home'> Home </a>
+				<a href='#aboutMe'> About Me </a>
+				<a href='#skills'> Skills </a>
+				<a href='#projects'> Projects & Demos </a>
+				<a href='#contact'> Contact Me </a>
+			</div>
+		</header>
+
+		<div id='fullpage'>
+			<div class='home section dark'>
+				<div class='sectionChild'>
+					<div class='column'>
+						<img src='https://picsum.photos/200/200'> 
+						<h1> Max Farley </h1>
+						<h2> Progamming & Game Development </h2>
+					</div>
+				</div>
+			</div>
+
+			<div class='aboutMe section light'>
+				<div class='sectionChild column'>
+					<h1> About Me! </h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet accumsan massa vel tempus. Praesent efficitur sed nunc a finibus. Aliquam pellentesque dolor a diam luctus, ac tincidunt lectus tincidunt. Vestibulum in mi arcu. Suspendisse eleifend enim lectus, in laoreet sem euismod quis. Etiam consequat consectetur libero, ac semper elit vulputate ultrices. Vivamus vel dolor quis lectus suscipit accumsan. Proin facilisis id urna in efficitur. </p>
+
+					<p>Pellentesque ante elit, tincidunt eget enim vitae, bibendum tristique tortor. Vestibulum efficitur lorem nulla, sed viverra leo varius nec. Sed tempus facilisis nisl, aliquet convallis lorem aliquam vitae. Vivamus eleifend posuere tortor eget consequat. Phasellus tempus lectus nec nunc interdum, sit amet porta libero semper. Duis convallis enim eu enim ullamcorper aliquet. Integer molestie blandit facilisis. Ut in libero enim. Sed efficitur sollicitudin magna, sed euismod neque sodales at. Nam in risus vitae dolor accumsan scelerisque. Cras mollis elit ut mattis pellentesque. Sed eu auctor mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+				</div>
+			</div>
+
+			<div class='skills section dark'>
+				<div class='sectionChild column'>
+
+					<h1> Skills </h1>
+					<div class='column33'>
+						<i class="fas fa-code fa-5x"></i>
+						<h2>Web Development </h2>
+						<ul>
+							<li> HTML </li>
+							<li> CSS </li>
+							<li> Javascript </li>
+							<li> PHP </li>
+						</ul>
+					</div>
+					<div class='column33'>
+
+						<i class="fab fa-unity fa-5x"></i>
+						<h2>Game Development </h2>
+						<ul>
+							<li> Unity3D </li>
+							<li> C# </li>
+							<li> WebGL </li>
+							<li> Web Browser Games </li>
+							
+						</ul>
+					</div>
+					<div class='column33'>
+						<i class="fas fa-keyboard fa-5x"></i>
+						<h2>Other Skills </h2>
+						<ul>
+							<li> Aritifical Intelligence </li>
+							<li> SQL </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class='projects section light'>
+				<div class='column'>
+					<h1> Featured Project </h1>
+					<h3> <a href=''> Check out more of my projects here! </a> </h3>
+					<div class='divider dark'> </div>
+					<h2> Project Name</h2>
+					<div class='column33'>
+						<img src='https://picsum.photos/200'>
+					</div>
+					<div class='column60'>
+						<p> The quick brown fox jumped over the lazy dog. Everyone always told me what I could do, but never what I would. Turns out only I get to decide that bit.</p>
+					</div>
+
+
+						
+					</div>
+				</div>
+
+				<div class='contact section dark'>
+					<div class='column'>
+						<h1> Contact me! </h1> 
+						<a href=''>
+							<div class='column33 twitter'>
+								<i class="fab fa-twitter fa-5x"></i>
+								<h2> Twitter </h2>
+								<p> Click me! </p>
+
+							</div>
+						</a>
+
+						<div class='column33 email'>
+							<i class="fas fa-envelope fa-5x"></i>
+							<h2> Email </h2>
+							<p> maxwfarley@live.co.uk </p>
+						</div>
+
+						<a href=''>
+							<div class='column33 linkedin'>
+								<i class="fab fa-linkedin fa-5x"></i>
+								<h2> LinkedIn </h2>
+								<p> Click me! </p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+
+		<script>
+			new fullpage('#fullpage', {
+				autoScrolling: true,
+				anchors:['home', 'aboutMe', 'skills', 'projects', 'contact']
+			});
+		</script>
+	</body>
+
+</html>
