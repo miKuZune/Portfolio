@@ -9,6 +9,8 @@
 
 		<link rel='stylesheet' type='text/css' href='main.css'>
 
+		<!-- Include boids script -->
+		<script type='text/Javascript' src='Boids/Boids.js'></script>
 		<!-- Include fullPage -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
 
@@ -32,12 +34,16 @@
 		</header>
 
 		<div id='fullpage'>
-			<div class='home section dark'>
+			<div class='home section'>
 				<div class='sectionChild'>
+					<div id='boidsContainer' class='dark'></div>
 					<div class='column'>
-						<img src='https://picsum.photos/200/200'> 
-						<h1> Max Farley </h1>
-						<h2> Progamming & Game Development </h2>
+						<div class='homeCard'>
+							<img src='https://picsum.photos/200/200'> 
+							<h1> Max Farley </h1>
+							<h2> Progamming & Game Development </h2>
+						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -145,6 +151,10 @@
 				autoScrolling: true,
 				anchors:['home', 'aboutMe', 'skills', 'projects', 'contact']
 			});
+		</script>
+
+		<script>
+			var simManager = new SimulationManager("boidsContainer", 'Boids/Arrow.png', 200);  
 		</script>
 	</body>
 
